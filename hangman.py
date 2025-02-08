@@ -20,7 +20,7 @@ def hangman():
         if len(guess) != 1 or not guess.isalpha():
             print("Please enter a single letter.")
         elif guess in guessed_letters:
-            print("You already guessed the letter", guess)
+            print("You have already guessed the letter", guess)
         elif guess not in word:
             print(guess, "is not in the word.")
             tries -= 1
